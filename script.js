@@ -8,6 +8,9 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 fetch("data.geojson")
   .then((response) => response.json())
   .then((data) => {
+    // Create a marker cluster group
+    var markers = L.markerClusterGroup();
+
     L.geoJSON(data, {
       onEachFeature: function (feature, layer) {
         // Create a popup with feature properties
@@ -22,6 +25,10 @@ fetch("data.geojson")
         </div>`;
 
         layer.bindPopup(popupContent);
+        markers.addLayer(layer);
       },
-    }).addTo(map);
+    });
+
+    // Add the marker cluster group to the map
+    map.addLayer(markers);
   });
