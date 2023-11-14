@@ -1,0 +1,28 @@
+/* styles.css */
+
+.popup {
+  max-width: 300px;
+}
+
+.popup h3 {
+  margin: 0 0 5px;
+}
+
+.popup ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.popup li {
+  margin-bottom: 8px;
+}
+
+.popup a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.popup a:hover {
+  text-decoration: underline;
+}

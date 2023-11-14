@@ -1,0 +1,135 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Loguetown",
+        "onePieceWikia": "https://onepiece.fandom.com/wiki/Loguetown",
+        "realWorldLocation": "Port Royal, Jamaica",
+        "wikipedia": "https://en.wikipedia.org/wiki/Port_Royal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.3036, 17.9139]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Water 7",
+        "onePieceWikia": "https://onepiece.fandom.com/wiki/Water_7",
+        "realWorldLocation": "Venice, Italy",
+        "wikipedia": "https://en.wikipedia.org/wiki/Venice"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.3155, 45.4408]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sabaody Archipelago",
+        "onePieceWikia": "https://onepiece.fandom.com/wiki/Sabaody_Archipelago",
+        "realWorldLocation": "Maldives",
+        "wikipedia": "https://en.wikipedia.org/wiki/Maldives"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [73.2207, 3.2028]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Drum Island",
+        "onePieceWikia": "https://onepiece.fandom.com/wiki/Drum_Island",
+        "realWorldLocation": "Greenland",
+        "wikipedia": "https://en.wikipedia.org/wiki/Greenland"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-42.6043, 71.7069]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Skypiea",
+        "onePieceWikia": "https://onepiece.fandom.com/wiki/Skypiea",
+        "realWorldLocation": "Machu Picchu, Peru",
+        "wikipedia": "https://en.wikipedia.org/wiki/Machu_Picchu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-72.545, -13.1631]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alabasta",
+        "onePieceWikia": "https://onepiece.fandom.com/wiki/Alabasta",
+        "realWorldLocation": "Giza, Egypt",
+        "wikipedia": "https://en.wikipedia.org/wiki/Giza"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [31.1342, 29.9792]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fish-Man Island",
+        "onePieceWikia": "https://onepiece.fandom.com/wiki/Fish-Man_Island",
+        "realWorldLocation": "Palau",
+        "wikipedia": "https://en.wikipedia.org/wiki/Palau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [134.5825, 7.1095]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wano Country",
+        "onePieceWikia": "https://onepiece.fandom.com/wiki/Wano_Country",
+        "realWorldLocation": "Kyoto, Japan",
+        "wikipedia": "https://en.wikipedia.org/wiki/Kyoto"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [135.7681, 35.0116]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Punk Hazard",
+        "onePieceWikia": "https://onepiece.fandom.com/wiki/Punk_Hazard",
+        "realWorldLocation": "Antarctica",
+        "wikipedia": "https://en.wikipedia.org/wiki/Antarctica"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [0, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Enies Lobby",
+        "onePieceWikia": "https://onepiece.fandom.com/wiki/Enies_Lobby",
+        "realWorldLocation": "Florence, Italy",
+        "wikipedia": "https://en.wikipedia.org/wiki/Florence"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.2558, 43.7696]
+      }
+    }
+  ]
+}
