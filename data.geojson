@@ -108,19 +108,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Punk Hazard",
-        "onePieceWikia": "https://onepiece.fandom.com/wiki/Punk_Hazard",
-        "realWorldLocation": "Antarctica",
-        "wikipedia": "https://en.wikipedia.org/wiki/Antarctica"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [0, 0]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Enies Lobby",
         "onePieceWikia": "https://onepiece.fandom.com/wiki/Enies_Lobby",
         "realWorldLocation": "Florence, Italy",
@@ -129,6 +116,58 @@
       "geometry": {
         "type": "Point",
         "coordinates": [11.2558, 43.7696]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zou",
+        "onePieceWikia": "https://onepiece.fandom.com/wiki/Zou",
+        "realWorldLocation": "Elephant Rock, Iceland",
+        "wikipedia": "https://en.wikipedia.org/wiki/Elephant_Rock_(Iceland)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20.311, 63.4394]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dressrosa",
+        "onePieceWikia": "https://onepiece.fandom.com/wiki/Dressrosa",
+        "realWorldLocation": "Spain",
+        "wikipedia": "https://en.wikipedia.org/wiki/Spain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.7, 40.433333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Corrida Colleseum",
+        "onePieceWikia": "https://onepiece.fandom.com/wiki/Corrida_Colosseum",
+        "realWorldLocation": "Colleseum, Rome",
+        "wikipedia": "https://en.wikipedia.org/wiki/Colosseum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.492222, 41.890278]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amazon Lily",
+        "onePieceWikia": "https://onepiece.fandom.com/wiki/Amazon_Lily",
+        "realWorldLocation": "China",
+        "wikipedia": "https://en.wikipedia.org/wiki/Colosseum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.383333, 39.916667]
       }
     }
   ]
