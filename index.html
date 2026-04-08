@@ -1,128 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>One Piece of Map</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/src/styles.css" />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="#"
-        >One Piece of Map
-        <small class="text-white-50 ml-2"
-          >Real place inspirations in One Piece</small
-        ></a
-      >
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a
-              class="nav-link"
-              href="https://forms.gle/KdLAteS5RBE2rorY7"
-              target="_blank"
-              >Suggest New Place</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="#"
-              data-toggle="modal"
-              data-target="#aboutModal"
-              >About</a
-            >
-          </li>
-        </ul>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-brand">
+        <h1>One Piece of Map</h1>
+        <span class="subtitle">Real-world inspirations in One Piece</span>
       </div>
-    </nav>
+      <nav class="header-nav">
+        <a href="https://forms.gle/KdLAteS5RBE2rorY7" target="_blank" rel="noopener">
+          Suggest New Place
+        </a>
+        <button id="about-btn" type="button">About</button>
+      </nav>
+    </header>
 
-    <!-- Map -->
-    <div id="map"></div>
+    <div class="app">
+      <!-- Side panel with location list -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search locations..."
+            autocomplete="off"
+          />
+          <span id="location-count" class="location-count"></span>
+        </div>
+        <ul id="location-list" class="location-list"></ul>
+      </aside>
+
+      <!-- Toggle button for mobile -->
+      <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle sidebar">
+        &#9776;
+      </button>
+
+      <!-- Map -->
+      <div id="map"></div>
+    </div>
 
     <!-- About Modal -->
-    <div
-      class="modal"
-      id="aboutModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="aboutModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="aboutModalLabel">About</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <!-- Add content for your about page here -->
-            <p>
-              One Piece of Map is a map that contains a list of real-world
-              locations that have been used for inspiration in
-              <a href="https://en.wikipedia.org/wiki/One_Piece">One Piece</a>.
-              The list is not complete or official.
-            </p>
-            <p>
-              The list is not complete or official. You can also submit a
-              suggestion for a new real-world inspiration.
-            </p>
-            <p>
-              Create by <a href="twitter.com/ismailsunni">@ismailsunni</a>. The
-              data and the code are available
-              <a href="https://github.com/ismailsunni/onepieceofmap">here</a>
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
+    <div class="modal-overlay" id="about-modal">
+      <div class="modal">
+        <div class="modal-header">
+          <h2>About</h2>
+          <button class="modal-close" id="modal-close">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>
+            <strong>One Piece of Map</strong> shows real-world locations that inspired places in
+            <a href="https://en.wikipedia.org/wiki/One_Piece" target="_blank" rel="noopener"
+              >One Piece</a
+            >.
+          </p>
+          <p>
+            Click any marker or list item to see both the real-world Wikipedia article and the One
+            Piece Wiki page side by side.
+          </p>
+          <p>The list is not complete or official. Suggestions welcome!</p>
+          <p>
+            Created by
+            <a href="https://twitter.com/ismailsunni" target="_blank" rel="noopener">@ismailsunni</a
+            >. Source on
+            <a href="https://github.com/ismailsunni/onepieceofmap" target="_blank" rel="noopener"
+              >GitHub</a
+            >.
+          </p>
         </div>
       </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
-    <script src="script.js"></script>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
